@@ -4,7 +4,7 @@ const app = express();
 const { connectSql } = require("./config/mysql");
 const { makeTable } = require("./models/Users");
 const { createHandler } = require("graphql-http/lib/use/express");
-const { schema } = require("./services/graphql-schema");
+const { schema } = require("./graphql");
 const PORT = 3000;
 
 app.get("/", (req, res) => {
